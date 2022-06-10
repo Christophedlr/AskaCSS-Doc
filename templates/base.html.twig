@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} - AskaCSS</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('askacss/css/askacss.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark">
+            <div class="title">AskaCSS</div>
+            <ul>
+                <li><a href="{{ path('app_index') }}">Index</a></li>
+                <li><a href="">Getting started</a></li>
+                <li><a href="">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer>
+        <div class="row">
+            <div class="col-s-1 col-8">
+                Copyright &copy; {{ 'now'|date('Y') }}, Christophe DALOZ - DE LOS RIOS - All right reserved.
+                AskaCSS is an Open-Source CSS Framework, created with <a href="https://sass-lang.com/">Sass</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-s-1 col-7">
+                Sass © 2006–2022 the Sass team, and numerous contributors.
+                It is available for use and modification under the MIT License.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-s-1 col-11">
+                <a href="https://sass-lang.com/">Sass</a>
+                <a href="https://material.io/design">Material Design</a>
+                <a href="https://fonts.google.com/specimen/Roboto">Roboto font</a>
+            </div>
+        </div>
+    </footer>
+
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

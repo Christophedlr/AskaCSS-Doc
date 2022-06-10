@@ -1,0 +1,12 @@
+/** App CSS */
+footer {
+    font-family: "robotoregular", sans-serif;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+footer a, footer a:visited {
+    color: #bdbdbd;
+}
