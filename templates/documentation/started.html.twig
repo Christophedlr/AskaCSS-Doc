@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Getting started{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <h1 class="col-s-6 col-2">Getting started</h1>
+    </div>
+
+    <div class="row started">
+        <div class="col-s-2 col-10">
+            <h2>Get AskaCSS framework</h2>
+            <p>
+                For obtain the framework, you can visit to
+                <a href="https://www.github.com/Christophedlr/AskaCSS/releases">Github page</a>, or you can download the
+                <a href="" class="btn primary">latest version</a> here.
+            </p>
+
+            <h2>Content of ZIP file</h2>
+            <p>The ZIP file contains the following files:</p>
+            <ul>
+                <li>
+                    <strong>css/</strong>
+                    <ul>
+                        <li><strong>askacss.css</strong> - CSS file of the framework</li>
+                        <li><strong>askacss.min.css</strong> - Minified CSS file of the framework</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>js/</strong>
+                    <ul>
+                        <li><strong>askacss.js</strong> - JavaScript file of the framework</li>
+                        <li><strong>askacss.min.js</strong> - Minified JavaScript file of the framework</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>fonts/</strong>
+                    <ul>
+                        <li><strong>Robot-Regular.ttf</strong> - Roboto font file</li>
+                        <li><strong>robot-regular-webfont.woff</strong> - Roboto font file</li>
+                        <li><strong>robot-regular-webfont.woff2</strong> - Roboto font file</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>docs/</strong>
+                    <ul>
+                        <li><strong>alert.md</strong> - Alert component markdown documentation</li>
+                        <li><strong>breadcrumb.md</strong> - Breadcrumb component markdown documentation</li>
+                        <li><strong>card.md</strong> - Card component markdown documentation</li>
+                        <li><strong>dropdown.md</strong> - Dropdown component markdown documentation</li>
+                        <li><strong>modal.md</strong> - Modal component markdown documentation</li>
+                        <li><strong>navbar.md</strong> - Navbar component markdown documentation</li>
+                        <li><strong>pagination.md</strong> - Pagination component markdown documentation</li>
+                        <li><strong>panel.md</strong> - Panel component markdown documentation</li>
+                        <li><strong>progressbar.md</strong> - Progressbar component markdown documentation</li>
+                        <li><strong>form.md</strong> - Form component markdown documentation</li>
+                        <li><strong>buttons.md</strong> - Buttons markdown documentation</li>
+                    </ul>
+                </li>
+                <li><strong>LICENSE</strong> - MIT license notice</li>
+                <li><strong>README.md</strong> - Readme markdown</li>
+                <li><strong>CHANGELOG</strong> - Changelog notice</li>
+            </ul>
+
+            <h2>Installation of ZIP version</h2>
+            <p>Uncompress ZIP file in your project resource directory.
+                The <strong>css</strong>, <strong>js</strong> and <strong>fonts</strong> directories, is important.
+                Use &#x3008;link&#x3009; tag to include the CSS file in your HTML. The <strong>askacss.min.css</strong>
+                file, is used in production websites. <strong>askacss.css</strong>, is habitualy used for development
+                websites.
+
+                <p>Use &#x3008;script&#x3009; tag to include the JavaScript file in your HTML.
+                The <strong>askacss.min.js</strong>
+                file, is used in production websites. <strong>askacss.js</strong>, is habitualy used for development
+                websites.</p>
+            </p>
+
+            <h2>Usage with source files</h2>
+            <p>For usage framework with source files, it is necessary to install node.js, npm, sass and typescript.
+                The SCSS files is compile with the <strong>sass</strong> command. The TypeScript files is compile with
+                the <strong>tsc</strong> command.
+            </p>
+
+            <p>
+                Type command, to install sass compiler : <blockquote>npm -g install sass</blockquote>
+            </p>
+
+            <p>
+                Type command, to install typescript compiler : <blockquote>npm -g install typescript</blockquote>
+            </p>
+
+            <p>
+                type command, to compile SCSS files : <blockquote>sass scss/askacss.scss location/directory/askacss.css</blockquote>
+            </p>
+
+            <p>
+                Place you into <strong>ts</strong> directory and type command, to compile TypeScript files :
+                <blockquote>tsc askacss.ts</blockquote>
+                or <blockquote>tsc --outFile location/askacss.js</blockquote>
+            </p>
+        </div>
+    </div>
+{% endblock %}
