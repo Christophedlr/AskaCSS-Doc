@@ -19,7 +19,7 @@ article {
     margin-bottom: 1rem;
 }
 
-blockquote {
+blockquote, pre {
     margin: 0.5rem 0.5rem 1rem;
     padding: 1rem;
     background-color: #b8b8b8;
@@ -29,6 +29,24 @@ ul, ol {
     padding: 0rem 1.5rem;
 }
 
+h2 {
+    margin-top: 1rem;
+}
+
 .started h2 {
     margin-top: 1rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.documentation ul {
+    list-style: none;
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.documentation h1 {
+    font-size: 2rem;
 }

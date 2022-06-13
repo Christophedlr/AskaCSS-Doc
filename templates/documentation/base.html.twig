@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="row documentation">
+        <aside class="col-s-2 col-1">
+            <h2>General</h2>
+
+            <ul>
+                <li><a href="{{ path('app_documentation') }}">Introduction</a></li>
+                <li><a href="">Root</a></li>
+                <li><a href="">Grid</a></li>
+                <li><a href="">Buttons</a></li>
+            </ul>
+
+            <h2>Components</h2>
+            <ul>
+                <li><a href="">Alert</a></li>
+                <li><a href="">Breadcrumb</a></li>
+                <li><a href="">Card</a></li>
+                <li><a href="">Dropdown</a></li>
+                <li><a href="">Form</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="">Navbar</a></li>
+                <li><a href="">Pagination</a></li>
+                <li><a href="">Panel</a></li>
+                <li><a href="">Progressbar</a></li>
+            </ul>
+
+            <h2>Other</h2>
+            <ul>
+                <li><a href="">Team</a></li>
+                <li><a href="">License</a></li>
+                <li><a href="">Versions</a></li>
+            </ul>
+        </aside>
+
+        <article class="col-9 documentation">
+            {% block documentation %}{% endblock %}
+        </article>
+    </section>
+{% endblock %}

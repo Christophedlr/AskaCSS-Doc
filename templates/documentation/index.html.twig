@@ -1,0 +1,57 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Introduction{% endblock %}
+
+{% block documentation %}
+    <h1>Introduction of documentation</h1>
+    <p>
+        This website, is an online documentation for the AskaCSS Framework.
+    </p>
+
+    <h2>Basic usage</h2>
+    <p>
+        To use the framework, you need to include the askacss.css file in your project and askacss.js.
+        Exemple of basic HTML document:
+
+    {% geshi 'html5' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="askacss.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="row">
+        <h1 class="col-s-6 col-6">Title H1</h1>
+    </div>
+
+    <div class="row">
+        <p class="col-12">
+            Content of the paragraph.
+        </p>
+    </div>
+
+    <script src="../js/askacss.js"></script>
+    </body>
+</html>
+    {% endgeshi %}
+
+    <h2>Work with AskaCSS</h2>
+    <p>
+        AskaCSS, used the flexbox and CSS selectors. The number of CSS class used is lower,
+        HTML files are more readable and easier to maintain.
+    </p>
+
+    <p>
+        It is possible not used, the grid system, but it is not recommended.
+        The grid permit you to facilite the layout of your website.
+        With not grid used, the placement of the elements is not easy to understand.
+    </p>
+
+    <p>
+        The grid system, cut the line in 12 columns, including the gutter. For more information, please read the
+        Grid System section, in documentation.
+    </p>
+
+{% endblock%}
