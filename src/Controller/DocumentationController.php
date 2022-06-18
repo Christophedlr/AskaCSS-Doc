@@ -24,4 +24,12 @@ class DocumentationController extends AbstractController
     {
         return $this->render('documentation/index.html.twig');
     }
+
+    /**
+     * @Route("/documentation/root", name="doc_root")
+     */
+    public function root(): Response
+    {
+        return $this->render('documentation/root.html.twig');
+    }
 }

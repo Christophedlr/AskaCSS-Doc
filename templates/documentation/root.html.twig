@@ -1,0 +1,74 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Root{% endblock %}
+
+{% block documentation %}
+        <h1>Reset elements & containers</h1>
+
+        <section class="col-12">
+            <article>
+                <h2>Reset elements</h2>
+                <p>
+                    AskaCSS provides a reset for all elements.
+                    This reset is useful for creating a clean and consistent look and feel for all elements.
+                    The box-sizing is set to border-box, so all elements are sized to their content.
+                    Reset all padding and margin values to 0.
+                    Declare the Roboto regular font with style and weight at normal.
+                </p>
+            </article>
+
+            <article>
+                <h2>Containers</h2>
+                <p>
+                    AskaCSS provides a containers for define the size of window :
+                    <ul>
+                        <li>
+                            <code>container</code> : 100% width, auto height, word-wrap at break-word
+                        </li>
+                        <li>
+                            <code>container-margin</code> : 90% width, auto height, word-wrap at break-word
+                        </li>
+                    </ul>
+
+                    The difference between <b>container</b> and <b>container-margin</b>,
+                    is the <b>container-margin</b> decrease to 90% of the width of the window and center elements.
+                </p>
+
+                {% geshi 'html5' %}
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="askacss.css">
+                    <title>Title</title>
+                </head>
+                <body>
+                    <main class="container">
+                        <p>Content with width 100%</p>
+                    </main>
+
+                    <script src="../js/askacss.js"></script>
+                </body>
+                </html>
+                {% endgeshi %}
+
+                {% geshi 'html5' %}
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="askacss.css">
+                    <title>Title</title>
+                </head>
+                <body>
+                    <main class="container-margin">
+                        <p>Content with width fixed to 90% and center</p>
+                    </main>
+
+                    <script src="../js/askacss.js"></script>
+                </body>
+                </html>
+                {% endgeshi %}
+            </article>
+        </section>
+{% endblock %}
