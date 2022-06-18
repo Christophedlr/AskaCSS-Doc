@@ -32,4 +32,12 @@ class DocumentationController extends AbstractController
     {
         return $this->render('documentation/root.html.twig');
     }
+
+    /**
+     * @Route("/documentation/grid", name="doc_grid")
+     */
+    public function grid(): Response
+    {
+        return $this->render('documentation/grid.html.twig');
+    }
 }

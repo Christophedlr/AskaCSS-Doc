@@ -1,0 +1,78 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Grid{% endblock %}
+
+{% block documentation %}
+    <h1>Grid system</h1>
+
+    <p>
+        The grid system is a flexible and powerful system for arranging content. It's based on a 12-column grid, and it's easy to use.
+    </p>
+
+    <section class="row documentation">
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-1</div>
+        <div class="ex-col col-1">col-10</div>
+        <div class="ex-col col-1">col-11</div>
+        <div class="ex-col col-1">col-12</div>
+    </section>
+
+    <section class="row documentation">
+        <div class="ex-col col-3">col-3</div>
+        <div class="ex-col col-3">col-3</div>
+        <div class="ex-col col-3">col-3</div>
+        <div class="ex-col col-3">col-3</div>
+    </section>
+
+    <section class="row documentation">
+        <div class="ex-col col-4">col-4</div>
+        <div class="ex-col col-4">col-4</div>
+        <div class="ex-col col-4">col-4</div>
+    </section>
+
+    <section class="row documentation">
+        <div class="ex-col col-5">col-5</div>
+        <div class="ex-col col-7">col-7</div>
+    </section>
+
+    <section class="row documentation">
+        <div class="ex-col col-s-2 col-11">col-s-2 col-11</div>
+    </section>
+
+    <section class="row documentation">
+        <div class="ex-col col-s-5 col-4">col-s-5 col-4</div>
+    </section>
+
+    <section>
+        <h2>Usage grid system</h2>
+        <p>
+            For usage a grid system, used <b>row</b> CSS class in your parent element.
+            Used <b>col-i</b> CSS class in your child element.
+            <b>i</b> is a number from 1 to 12.
+        </p>
+
+        <p>
+            The <b>col-s-i</b> CSS class, start in <i>i</i> column, and finish in <b>col-i</b> + <b>col-s-i</b> -1 column.
+            For example, for center the <b>col-s-5 col-4</b> text, you can use the following CSS class :
+            <code>col-s-5 col-4</code>.
+        </p>
+
+        <p>
+            <b>col-s-5</b> start in column number 5 of grid system.
+            <b>col-4</b> extends to 4 columns.
+            The combination of two classes, finished display text in column 8.
+        </p>
+
+        <p>
+            The start column of grid system is 1. If used the <b>col-s-2</b> CSS class, the start column is 2.
+            <b>col-s-i</b>, is not number of skip columns, but the column from which the element will start.
+        </p>
+    </section>
+{% endblock %}

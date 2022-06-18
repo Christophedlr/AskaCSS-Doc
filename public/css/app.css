@@ -50,3 +50,11 @@ p {
 .documentation h1 {
     font-size: 2rem;
 }
+
+.documentation .ex-col {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.2rem;
+}
