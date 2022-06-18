@@ -40,4 +40,12 @@ class DocumentationController extends AbstractController
     {
         return $this->render('documentation/grid.html.twig');
     }
+
+    /**
+     * @Route("/documentation/buttons", name="doc_btn")
+     */
+    public function buttons(): Response
+    {
+        return $this->render('documentation/buttons.html.twig');
+    }
 }

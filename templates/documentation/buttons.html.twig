@@ -1,0 +1,57 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Buttons{% endblock %}
+
+{% block documentation %}
+    <h1>Buttons system</h1>
+
+    <p>
+        AskaCSS personalize the buttons of the website. The <b>btn</b> class,
+        is used for personalize the links for the visual element is a button.
+        The <b>button</b> tag or <b>input</b> type <i>button</i>, <i>submit</i> and <i>reset</i>,
+        is automatically personalized. If used the <b>btn-text</b> class, the button looks like a text.
+    </p>
+
+    <section>
+        <h2>Example of buttons</h2>
+
+        <input type="button" value="Input button">
+        <button class="btn-text">Button button btn-text</button>
+
+        <a href="" class="btn">a link button</a>
+    </section>
+
+    <section>
+        <h2>Color for your button</h2>
+
+        <button>Grey button</button>
+        <button class="primary">Blue button</button>
+        <button class="warning">Yellow button</button>
+        <button class="info">Turquoise button</button>
+        <button class="error">Red button</button>
+        <button class="success">Green button</button>
+
+        <button class="btn-text">Grey button</button>
+        <button class="primary btn-text">Blue button</button>
+        <button class="warning btn-text">Yellow button</button>
+        <button class="info btn-text">Turquoise button</button>
+        <button class="error btn-text">Red button</button>
+        <button class="success btn-text">Green button</button>
+
+        {% geshi 'html5' %}
+        <button>Grey button</button>
+        <button class="primary">Blue button</button>
+        <button class="warning">Yellow button</button>
+        <button class="info">Turquoise button</button>
+        <button class="error">Red button</button>
+        <button class="success">Green button</button>
+
+        <button class="btn-text">Grey button</button>
+        <button class="primary btn-text">Blue button</button>
+        <button class="warning btn-text">Yellow button</button>
+        <button class="info btn-text">Turquoise button</button>
+        <button class="error btn-text">Red button</button>
+        <button class="success btn-text">Green button</button>
+        {% endgeshi %}
+    </section>
+{% endblock %}
