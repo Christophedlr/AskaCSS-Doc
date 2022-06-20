@@ -58,3 +58,7 @@ p {
     margin-bottom: auto;
     padding: 0.2rem;
 }
+
+.mb-1 {
+    margin-bottom: 1rem;
+}

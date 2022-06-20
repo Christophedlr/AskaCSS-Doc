@@ -1,0 +1,100 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Alert component{% endblock %}
+
+{% block documentation %}
+    <h1>Alert component</h1>
+
+    <p>
+        The alert component is used to display messages to the user.
+    </p>
+
+    <section class="row mb-1">
+        <div class="col-4 alert">
+            Alert grey message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row mb-1">
+        <div class="col-4 alert primary">
+            Alert blue message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row mb-1">
+        <div class="col-4 alert warning">
+            Alert yellow message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row mb-1">
+        <div class="col-4 alert error">
+            Alert error message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row mb-1">
+        <div class="col-4 alert info">
+            Alert turquoise message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row mb-1">
+        <div class="col-4 alert success">
+            Alert green message
+            <button type="button" class="alert-close">&#215;</button>
+        </div>
+    </section>
+
+    <section class="row">
+        <article class="col-12">
+            {% geshi 'html5' %}
+            <div class="col-4 alert">
+                Alert grey message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+
+            <div class="col-4 alert primary">
+                Alert blue message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+
+            <div class="col-4 alert warning">
+                Alert yellow message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+
+            <div class="col-4 alert error">
+                Alert error message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+
+            <div class="col-4 alert info">
+                Alert turquoise message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+
+            <div class="col-4 alert success">
+                Alert green message
+                <button type="button" class="alert-close">&#215;</button>
+            </div>
+            {% endgeshi %}
+        </article>
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            Use the <b>alert</b> CSS class to display an alert. It's possible to close the alert by clicking on the close button.
+            For add close button, use the <b>alert-close</b> CSS class.
+        </p>
+
+        <p>WARNING ! The <b>alert-close</b>, required the askacss javascript file.</p>
+    </section>
+{% endblock %}
