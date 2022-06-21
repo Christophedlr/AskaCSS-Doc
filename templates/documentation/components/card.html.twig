@@ -1,0 +1,43 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Card Component{% endblock %}
+
+{% block documentation %}
+    <h1>Card Component</h1>
+    <p>
+        The card component is a container for content. It can be used to display content in a card.
+    </p>
+
+    <section class="row">
+        <div class="col-s-2 col-3 card">
+            <h2>Title card component</h2>
+            <h3>Subtitle card component</h3>
+            <div class="body">I'm a content of card</div>
+            <hr>
+            <button class="btn-text">BUTTON</button>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+        <div class="col-s-2 col-3 card">
+            <h2>Title card component</h2>
+            <h3>Subtitle card component</h3>
+            <div class="body">I'm a content of card</div>
+            <img src="picture.jpg" alt="" srcset="">
+            <hr>
+            <button class="btn-text">BUTTON</button>
+        </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+        <p>
+            The card component, is used with the <b>card</b> CSS class.
+            <b>h2</b> tag is required for title, but the <b>h3</b>, permit used a subtitle.
+            <b>body</b> CSS class is required for content.
+            <b>hr</b> tag, is used to separate the content.
+        </p>
+    </section>
+{% endblock %}

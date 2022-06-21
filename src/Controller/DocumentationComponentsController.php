@@ -23,4 +23,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/breadcrumb.html.twig');
     }
+
+    /**
+     * @Route("/documentation/card", name="doc_components_card")
+     */
+    public function card(): Response
+    {
+        return $this->render('documentation/components/card.html.twig');
+    }
 }
