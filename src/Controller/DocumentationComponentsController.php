@@ -31,4 +31,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/card.html.twig');
     }
+
+    /**
+     * @Route("/documentation/dropdown", name="doc_components_dropdown")
+     */
+    public function dropdown(): Response
+    {
+        return $this->render('documentation/components/dropdown.html.twig');
+    }
 }

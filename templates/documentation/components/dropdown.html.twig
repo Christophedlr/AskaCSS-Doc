@@ -1,0 +1,45 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Dropdown component{% endblock %}
+
+{% block documentation %}
+    <h1>Dropdown component</h1>
+    <p>
+        The dropdown component is used for create a dropdown menu for the buttons.
+    </p>
+
+    <section class="row">
+        <div class="col-2 dropdown">
+            <button>Dropdown</button>
+            <div class="content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <hr>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+        <div class="col-2 dropdown">
+            <button>Dropdown</button>
+            <div class="content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <hr>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            The dropdown component required the <b>dropdown</b> CSS class and <b>content</b> CSS class.
+            <b>hr</b> tag, permet to create a separator.
+        </p>
+    </section>
+{% endblock %}
