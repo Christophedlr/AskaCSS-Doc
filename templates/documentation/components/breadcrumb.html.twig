@@ -1,0 +1,75 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Breadcrumb Component{% endblock %}
+
+{% block documentation %}
+    <h1>Breadcrumb Component</h1>
+
+    <p>
+        The breadcrumb component, is used to display the current page's location in the website.
+    </p>
+
+    <section>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="">Index</a></li>
+                <li><a href="">Category</a></li>
+                <li>Element</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="">Index</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Element</a></li>
+                <li>Other Element</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <nav class="breadcrumb">
+            <ul>
+                <li>Index</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="">Index</a></li>
+                <li><a href="">Category</a></li>
+                <li>Element</li>
+            </ul>
+        </nav>
+
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="">Index</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Element</a></li>
+                <li>Other Element</li>
+            </ul>
+        </nav>
+
+        <nav class="breadcrumb">
+            <ul>
+                <li>Index</li>
+            </ul>
+        </nav>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            The breadcrumb required <b>breadcrumb</b> CSS class only. But the <b>ul</b> tag is required.
+        </p>
+    </section>
+{% endblock %}

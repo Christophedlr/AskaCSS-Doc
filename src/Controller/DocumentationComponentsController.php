@@ -9,10 +9,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class DocumentationComponentsController extends AbstractController
 {
     /**
-     * @Route("/documentation/test", name="doc_components_alert")
+     * @Route("/documentation/alert", name="doc_components_alert")
      */
     public function alert(): Response
     {
         return $this->render('documentation/components/alert.html.twig');
+    }
+
+    /**
+     * @Route("/documentation/breadcrumb", name="doc_components_breadcrumb")
+     */
+    public function breadcrumb(): Response
+    {
+        return $this->render('documentation/components/breadcrumb.html.twig');
     }
 }
