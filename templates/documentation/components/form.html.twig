@@ -1,0 +1,87 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Form component{% endblock %}
+
+{% block documentation %}
+    <h1>Form component</h1>
+    <p>
+        The form component is used for create a form.
+    </p>
+
+    <section class="row">
+        <form class="col-6">
+            <div>
+                <label for="name">Firstname</label>
+                <input type="text" id="firstname" name="firstname" />
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <label for="name">Lastname</label>
+                <input type="text" id="lastname" name="lastname" />
+            </div>
+
+            <input type="submit" value="Submit" style="margin-top: 1rem;" class="primary">
+        </form>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <form>
+            <div>
+                <label for="name">Firstname</label>
+                <input type="text" id="firstname" name="firstname" />
+            </div>
+
+            <div>
+                <label for="name">Lastname</label>
+                <input type="text" id="lastname" name="lastname" />
+            </div>
+
+            <input type="submit" value="Submit" class="primary">
+            </form>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            The form component does not have a specific class.
+        </p>
+    </section>
+
+    <section>
+        <h2>Other examples</h2>
+
+        <form class="col-6">
+            <div>
+                <label><input type="checkbox" name="test" value="test 1"> test1</label>
+                <label><input type="checkbox" name="test" value="test 2"> test2</label>
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <label><input type="radio" name="test_radio" value="test 1">test1</label>
+                <label><input type="radio" name="test_radio" value="test 2">test2</label>
+            </div>
+
+            <input type="submit" value="Submit" style="margin-top: 1rem;" class="primary">
+        </form>
+    </section>
+
+    <section>
+        <h2>Colors</h2>
+        <p>
+            The form component can be colorized with the following colors (CSS class):
+        </p>
+        <ul>
+            <li>primary</li>
+            <li>success</li>
+            <li>error</li>
+            <li>warning</li>
+            <li>info</li>
+        </ul>
+        <p>
+            The colors is used directly in the form element.
+        </p>
+    </section>
+{% endblock %}
