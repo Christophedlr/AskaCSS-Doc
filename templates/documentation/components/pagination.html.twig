@@ -1,0 +1,107 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Pagination component{% endblock %}
+
+{% block documentation %}
+    <h1>Pagination component</h1>
+    <p class="mb-1">
+        The pagination component is used to display a pagination bar.
+    </p>
+
+    <section class="mb-1">
+        <div class="pagination">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+                <li><a href="">9</a></li>
+                <li><a href="">10</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="mb-1">
+        <div class="pagination">
+            <ul>
+                <li><a href="">Previous</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">Next</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="mb-1">
+        <div class="pagination">
+            <ul>
+                <li><a href=""><<</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">>></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="pagination">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+                <li><a href="">9</a></li>
+                <li><a href="">10</a></li>
+            </ul>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="pagination">
+                <ul>
+                    <li><a href="">Previous</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">Next</a></li>
+                </ul>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="pagination">
+                <ul>
+                    <li><a href=""><<</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">>></a></li>
+                </ul>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            the pagination component required the <b>pagionation</b> CSS class to be set on the pagination content.
+            The elements are represented by the <b>ul</b> and <b>li</b> tags.
+        </p>
+    </section>
+{% endblock %}

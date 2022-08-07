@@ -63,4 +63,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/navbar.html.twig');
     }
+
+    /**
+     * @Route("/documentation/pagination", name="doc_components_pagination")
+     */
+    public function pagination(): Response
+    {
+        return $this->render('documentation/components/pagination.html.twig');
+    }
 }
