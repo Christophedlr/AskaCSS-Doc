@@ -1,0 +1,55 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Modal component{% endblock %}
+
+{% block documentation %}
+    <h1>Modal component</h1>
+    <p>
+        The modal component is used to display a modal window.
+    </p>
+
+    <section class="row">
+        <button class="modal primary" data-toggle="#modal">Demo modal</button>
+
+        <div class="col-2 modal" id="modal">
+            <div class="content">
+                <h2 class="header">
+                    <button class="close" data-toggle="close">×</button>
+                    Modal header
+                </h2>
+                <div class="body">Content</div>
+                <div class="footer">Footer content</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <button class="modal primary" data-toggle="#modal">Demo modal</button>
+
+            <div class="col-2 modal" id="modal">
+                <div class="content">
+                    <h2 class="header">
+                        <button class="close" data-toggle="close">×</button>
+                        Modal header
+                    </h2>
+                    <div class="body">Content</div>
+                    <div class="footer">Footer content</div>
+                </div>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            the modal component required the <b>content</b> CSS class to be set on the modal content.
+            <b>header</b> CSS class for designing the modal header. <b>body</b> CSS class for designing the modal body.
+            <b>footer</b> CSS class for designing the modal footer.
+        </p>
+
+        <p>The button with <b>close</b> CSS class, is used to display the cross for close modal, but click in outside modal
+        close the modal.</p>
+    </section>
+{% endblock %}

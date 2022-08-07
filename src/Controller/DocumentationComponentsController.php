@@ -47,4 +47,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/form.html.twig');
     }
+
+    /**
+     * @Route("/documentation/modal", name="doc_components_modal")
+     */
+    public function modal(): Response
+    {
+        return $this->render('documentation/components/modal.html.twig');
+    }
 }
