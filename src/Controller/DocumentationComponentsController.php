@@ -55,4 +55,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/modal.html.twig');
     }
+
+    /**
+     * @Route("/documentation/navbar", name="doc_components_navbar")
+     */
+    public function navbar(): Response
+    {
+        return $this->render('documentation/components/navbar.html.twig');
+    }
 }

@@ -1,0 +1,73 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Navbar component{% endblock %}
+
+{% block documentation %}
+    <h1>Navbar component</h1>
+    <p>
+        The navbar component is used to display a navigation bar.
+    </p>
+
+    <section class="mb-1">
+        <nav class="navbar navbar-dark">
+            <div class="title">Title</div>
+            <ul>
+                <li><a href="">test 1</a></li>
+                <li>test 2</li>
+                <li>test 3</li>
+                <li>test 4</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <nav class="navbar">
+            <div class="title">Title</div>
+            <ul>
+                <li><a href="">test 1</a></li>
+                <li>test 2</li>
+                <li>test 3</li>
+                <li>test 4</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <nav class="navbar navbar-dark">
+                <div class="title">Title</div>
+                <ul>
+                    <li><a href="">test 1</a></li>
+                    <li>test 2</li>
+                    <li>test 3</li>
+                    <li>test 4</li>
+                </ul>
+            </nav>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <nav class="navbar">
+                <div class="title">Title</div>
+                <ul>
+                    <li><a href="">test 1</a></li>
+                    <li>test 2</li>
+                    <li>test 3</li>
+                    <li>test 4</li>
+                </ul>
+            </nav>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+
+        <p>
+            the navbar component required the <b>navbar</b> CSS class to be set on the navbar content.
+            <b>title</b> CSS class for designing the modal title. The elements are represented by the <b>ul</b> tag.
+        </p>
+
+        <p>It's possible use the <b>navbar-dark</b> to display a dark navbar.</p>
+    </section>
+{% endblock %}
