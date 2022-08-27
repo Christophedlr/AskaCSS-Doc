@@ -1,0 +1,54 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Panel Component{% endblock %}
+
+{% block documentation %}
+    <h1>Panel Component</h1>
+    <p>
+        The panel component is used to create the element for news and ther content.
+    </p>
+
+    <section class="row">
+        <div class="col-s-2 col-3 panel primary">
+            <h2 class="title">Title panel component</h2>
+            <div class="body">I'm a content of panel</div>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="col-s-2 col-3 panel primary">
+                <h2 class="title">Title panel component</h2>
+                <div class="body">I'm a content of panel</div>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section class="row">
+        <div class="col-s-2 col-3 panel primary">
+            <h2 class="title">Title panel component</h2>
+            <div class="body">I'm a content of panel</div>
+            <div class="footer">Footer of panel component</div>
+        </div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="col-s-2 col-3 panel primary">
+                <h2 class="title">Title panel component</h2>
+                <div class="body">I'm a content of panel</div>
+                <div class="footer">Footer of panel component</div>
+            </div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+        <p>
+            The panel component is used with the <b>panel</b> CSS class.<br>
+            <b>title</b> class is used to create the title of panel component.<br>
+            <b>body</b> class is required for content.<br>
+            <b>footer</b> class is used to create the footer of panel component.
+        </p>
+    </section>
+{% endblock %}

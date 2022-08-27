@@ -71,4 +71,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/pagination.html.twig');
     }
+
+    /**
+     * @Route("/documentation/panel", name="doc_components_panel")
+     */
+    public function panel(): Response
+    {
+        return $this->render('documentation/components/panel.html.twig');
+    }
 }
