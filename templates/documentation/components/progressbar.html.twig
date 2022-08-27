@@ -1,0 +1,52 @@
+{% extends 'documentation/base.html.twig' %}
+
+{% block title %}Progressbar Component{% endblock %}
+
+{% block documentation %}
+    <h1>Progressbar Component</h1>
+    <p>
+        The progressbar component is used to show the progress of a task.
+    </p>
+
+    <section class="row">
+        <div class="col-s-2 col-3 progressbar" aria-value="34" aria-max="100"></div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="col-s-2 col-3 progressbar" aria-value="34" aria-max="100"></div>
+        {% endgeshi %}
+    </section>
+
+    <section class="row">
+        <div class="col-s-2 col-3 progressbar" aria-value="98%" aria-max="100%"></div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="col-s-2 col-3 progressbar" aria-value="98%" aria-max="100%"></div>
+        {% endgeshi %}
+    </section>
+
+    <section class="row">
+        <div class="col-s-2 col-3 progressbar" aria-value="8249" aria-max="24560"></div>
+    </section>
+
+    <section>
+        {% geshi 'html5' %}
+            <div class="col-s-2 col-3 progressbar" aria-value="8249" aria-max="24560"></div>
+        {% endgeshi %}
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+        <p>
+            The progressbar used the <b>aria-value</b> and <b>aria-max</b> attributes to calculate the position of progressbar.<br>
+            The <b>aria-value</b> attribute is the current value of the progressbar and the <b>aria-max</b> attribute is the maximum value of the progressbar.
+        </p>
+
+        <p>
+            Is used the percentage values, <b>100%</b> is the maximum value of the progressbar.
+        </p>
+    </section>
+{% endblock %}

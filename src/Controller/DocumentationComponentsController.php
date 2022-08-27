@@ -79,4 +79,12 @@ class DocumentationComponentsController extends AbstractController
     {
         return $this->render('documentation/components/panel.html.twig');
     }
+
+    /**
+     * @Route("/documentation/progress", name="doc_components_progress")
+     */
+    public function progressbar(): Response
+    {
+        return $this->render('documentation/components/progressbar.html.twig');
+    }
 }
