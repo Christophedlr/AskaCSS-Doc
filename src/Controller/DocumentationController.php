@@ -48,4 +48,12 @@ class DocumentationController extends AbstractController
     {
         return $this->render('documentation/buttons.html.twig');
     }
+
+    /**
+     * @Route("/documentation/license", name="doc_license")
+     */
+    public function license(): Response
+    {
+        return $this->render('documentation/license.html.twig');
+    }
 }
